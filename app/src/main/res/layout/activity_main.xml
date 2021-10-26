@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="91dp"
+        android:text="Marek Kowalski"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ViewTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="27dp"
+        android:text="555 666 777"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewName" />
+
+    <Button
+        android:id="@+id/ButtonRecycler"
+        android:layout_width="230dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="23dp"
+        android:text="Edytuj cele"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonEditBudget"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="m.kowalski@gmail.com"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/ViewTel"
+        app:layout_constraintTop_toBottomOf="@+id/ViewTel" />
+
+    <TextView
+        android:id="@+id/ViewGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="312dp"
+        android:text="Cel oszczędnościowy: nie ustalono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ViewSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="31dp"
+        android:text="Stan konta: brak danych"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ViewGoal" />
+
+    <Button
+        android:id="@+id/ButtonEditBudget"
+        android:layout_width="229dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="56dp"
+        android:text="Edytuj budżet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonRecycler"
+        app:layout_constraintStart_toStartOf="@+id/ButtonRecycler" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
